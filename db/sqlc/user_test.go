@@ -43,6 +43,7 @@ func TestGetUser(t *testing.T) {
 	require.NoError(t, err)
 	require.NotEmpty(t, user2)
 
+	//
 	require.Equal(t, user1.Username, user2.Username)
 	require.Equal(t, user1.HashedPassword, user2.HashedPassword)
 	require.Equal(t, user1.FullName, user2.FullName)
